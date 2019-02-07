@@ -1,0 +1,22 @@
+{
+  "name": "twit_scraper",
+  "version": "1.0.0",
+  "description": "twitter scrapper for latest tweets",
+  "main": "app.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "author": "mufi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mysql": "^2.16.0",
+    "ps-node": "^0.1.6",
+    "ps-tree": "^1.1.0",
+    "scrape-it": "^5.1.0",
+    "utf8": "^3.0.0",
+    "uuid": "^3.3.2"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tweet Search Engine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/tweet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">  var searchForTweets = false ; </script>
+  <script src="/js/getrequest.js"></script>
+	<script src="/js/postrequest.js"></script>
+	<script src="/js/unload.js"></script>
+</head>
+ 
+<body> 
+<div class="container"> 
+<div class="col-sm-4">
+	<h3>Tweet Search Engine</h3>
+	<div>		
+		<form id="TweetSearchForm">
+		  <div class="form-group">
+			<label for="search">Search for a Tweet:</label>
+			<input type="text" class="form-control" id="query" placeholder="Enter Query"/>
+		  </div>
+		  
+		  <button type="submit" class="btn btn-default">Search</button>
+		</form>
+	</div>
+	<div id="postResultDiv">
+	</div>
+	<br>
+	<div>
+		<button id="viewTweets" type="button" class="btn btn-default">Load Tweets</button>
+		<div id="getResultDiv">
+	        <ul class="list-group">
+	    	</ul>
+    	</div>
+	</div>
+</div>	
+</div>
+</body>
+</html>

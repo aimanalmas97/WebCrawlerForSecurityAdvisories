@@ -1,0 +1,30 @@
+html
+head
+title= 'Tweets'
+style
+    include style.css
+body 
+h1= 'Tweet search results'
+table
+    for tweet in tweets
+        tr
+            td= tweet.User_name
+            td= tweet.tweet
+            td= tweet.time_stamp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

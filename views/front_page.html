@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+  <title>Tweet Search Engine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/tweet.css">
+    <link rel="stylesheet" href="/css/front_page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">  var searchForTweets = false ; </script>
+    <script src="/js/getrequest.js"></script>
+    <script src="/js/postrequest.js"></script>
+    <script src="/js/unload.js"></script>
+</head>
+
+<body> 
+        <div class="container"> 
+                <div class="jumbotron">
+                  <h1>TWITTER LIVE ANALYTICS ENGINE</h1>      
+                
+                </div><!-- Main heading ends here -->
+
+
+                <div class="row">
+                        <div class="col-sm-3">
+                            <div class="panel panel-default">
+                                <div class="panel-body"  style="text-align:center;">
+                                    <a href="#"><img class="img-responsive" alt="" src="/images/tweet-analysis.png" style=" display: inline-block;"></a>
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <h5>
+                                                <small >TWEETS</small>
+                                                <a id="total_tweets" href="#"></a>
+                                            </h5>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <h5>
+                                                <small>REFRESH RATE</small>
+                                                <a  href="#">10s</a>
+                                            </h5>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <h5>
+                                                <small >LAST UPDATE </small> <br>
+                                                <a id="tweet_date" href="#"></a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="panel panel-default panel-custom">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        HISTORY
+                                        
+                                    </h3>
+                                </div>
+                
+                                <div class="panel-body">
+                                    <ul class="list-unstyled">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- panel column ends here  -->
+
+                        <div class="col-sm-6">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <div class="media">
+                                            <a class="media-left" href="#fake">
+                                                <img id="logo" alt="" class="media-object img-rounded" src="/images/twitter.png">
+                                            </a>
+                                            <div class="media-body">
+                                                    <div >
+                                                            <form  id="TweetSearchForm" class="form-inline search input-group" role="search" name="search-input">
+                                                              <input id="query" type="text" class="form-control" placeholder="Enter a query" name="search">
+                                                              <span class="input-group-btn">
+                                                              <button   type="submit" class="btn btn-primary" >Search  <span class="glyphicon glyphicon-search"></span></button>
+                                                              </span>
+                                                            </form>
+                                                          </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="snackbar">Some text some message..</div>
+                                    <div id="getResultDiv" class="panel-body">
+                                            <ul class="list-group"> <!-- all the tweets are appended here  -->
+                                             
+                                            </ul>
+                                            
+                                    </div> <!-- tweet column ends here  -->
+
+                                     
+                    
+                    </div> <!-- row ends here  -->
+                   
+                   
+              </div> <!-- Main container div -->
+
+             
+
+
+
+</body>
+
+
+</html>    
